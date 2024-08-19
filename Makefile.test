@@ -1,0 +1,2 @@
+test_gcd:
+	mill -i $(PRJ)[$(CHISEL_VERSION)].test.testOnly $(PRJ).GCDSpec
