@@ -15,6 +15,10 @@ verilog:
 	mkdir -p $(BUILD_DIR)
 	mill -i $(PRJ)[$(CHISEL_VERSION)].runMain Gcd.Main --target-dir $(BUILD_DIR)
 
+alu:
+	mkdir -p $(BUILD_DIR)
+	mill -i $(PRJ)[$(CHISEL_VERSION)].runMain MGPGPU.ALU --target-dir $(BUILD_DIR)
+
 help:
 	mill -i $(PRJ).runMain Gcd.DCache --help
 
